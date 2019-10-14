@@ -1,0 +1,39 @@
+Kadiv 
+-Cuti approval
+SELECT * FROM cuti WHERE id_divisi='$data[id_divisi]' AND cabang ='$data[cabang]'
+
+-Lembur approval
+SELECT * FROM lembur WHERE id_divisi='$data[id_divisi]' AND cabang ='$data[cabang]'
+
+Finance
+-Klaim approval
+SELECT * FROM klaim
+
+
+Manager
+-Peminjaman approval
+SELECT * FROM peminjaman WHERE level ='5'
+
+-Salary approval
+SELECT * FROM peminjaman WHERE level ='5'
+
+-Kenaikkan Gaji approval
+SELECT * FROM peminjaman WHERE level ='5'
+
+HRD
+-Cuti
+SELECT * FROM cuti
+
+-Absensi
+SELECT * FROM stat_absensi 
+
+-Lembur
+SELECT * FROM lembur
+
+
+LEVEL
+Manager pusat = 5
+Manager Kacab = 4
+Kadiv = 3
+Finance = 2
+HRD = 1
